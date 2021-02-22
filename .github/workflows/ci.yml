@@ -62,8 +62,18 @@ jobs:
         uses: matlab-actions/run-command@v0
         with:
            command: matlab.addons.toolbox.packageToolbox('./release/main.prj')
-    
 
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          bodyFile: ./release/main.mltbx
+          draft: false
+          prerelease: false
       # As an alternative to run-tests, you can use run-command to execute a MATLAB script, function, or statement.
       #- name: Run all tests
       #  uses: matlab-actions/run-command@v0
