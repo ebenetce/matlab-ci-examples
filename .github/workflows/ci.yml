@@ -42,6 +42,12 @@ jobs:
         with:
             file: code-coverage/coverage.xml
 
+      - name: Publish Unit Test Results
+        uses: EnricoMi/publish-unit-test-result-action@v1
+        if: always()
+        with:
+          files: test-results/results.xml
+
       # As an alternative to run-tests, you can use run-command to execute a MATLAB script, function, or statement.
       #- name: Run all tests
       #  uses: matlab-actions/run-command@v0
