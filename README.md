@@ -6,10 +6,7 @@ This repository shows how to run MATLAB tests with a variety of continuous integ
 
 | **CI Platform** | **Badges** | **Badge Help** |
 |:----------------|:-----------|:---------------|
-| Azure DevOps | [![Azure DevOps Build Status](https://dev.azure.com/asifouna/Testing%20MATLAB%20CI/_apis/build/status/asifouna.matlab-ci-examples?branchName=main)](https://dev.azure.com/asifouna/Testing%20MATLAB%20CI/_build/latest?definitionId=1&branchName=main) ![Azure DevOps Coverage](https://img.shields.io/azure-devops/coverage/asifouna/Testing%20MATLAB%20CI/1/main) | [Blog with helpful information for setting up Azure DevOps badges](https://gregorsuttie.com/2019/03/20/azure-devops-add-your-build-status-badges-to-your-wiki/) |
-| CircleCI | [![CircleCI Build Badge](https://circleci.com/gh/asifouna/matlab-ci-examples.svg?style=shield)](https://travis-ci.com/asifouna/matlab-ci-examples) | [CircleCI documentation for setting up badges](https://circleci.com/docs/2.0/status-badges/#generating-a-status-badge "CircleCI documentation for setting up badges") |
-| GitHub Actions | [![MATLAB](https://github.com/asifouna/matlab-ci-examples/workflows/MATLAB/badge.svg)](https://github.com/asifouna/matlab-ci-examples/actions?query=workflow%3AMATLAB) | [GitHub Actions documentation for setting up badges](https://docs.github.com/en/actions/managing-workflow-runs/adding-a-workflow-status-badge) |
-| Travis CI | [![Travis CI Build Status](https://travis-ci.com/asifouna/matlab-ci-examples.svg?branch=main)](https://travis-ci.com/asifouna/matlab-ci-examples) | [Travis CI documentation for setting up badges](https://docs.travis-ci.com/user/status-images/ "Travis CI documentation for setting up badges") |
+| GitHub Actions | [![MATLAB](https://github.com/ebenetce/matlab-ci-examples/workflows/MATLAB/badge.svg)](https://github.com/asifouna/matlab-ci-examples/actions?query=workflow%3AMATLAB) | [GitHub Actions documentation for setting up badges](https://docs.github.com/en/actions/managing-workflow-runs/adding-a-workflow-status-badge) |
 
 ## Quick start guide
 Here's how to really quickly and easily use this repository:
