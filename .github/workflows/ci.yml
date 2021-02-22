@@ -47,6 +47,17 @@ jobs:
         if: always()
         with:
           files: test-results/results.xml
+  package:
+    #
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Package
+        uses: matlab-actions/run-command@v0
+        with:
+           command: matlab.addons.toolbox.packageToolbox('release/main.prj')
+    
 
       # As an alternative to run-tests, you can use run-command to execute a MATLAB script, function, or statement.
       #- name: Run all tests
