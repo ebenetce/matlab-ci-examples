@@ -23,7 +23,7 @@ classdef TestExamples < matlab.unittest.TestCase
 
             % Calculate expected result
             dt = datetime(dateStr,"Format","MM/dd/uuuu");
-            doyExpected = day(dt,"dayofyear");
+            doyExpected = day(dt,"dayofyear") + 1 ;
 
             % Get actual result
             doyActual = dayofyear(dateStr);
