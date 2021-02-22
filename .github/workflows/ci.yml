@@ -53,6 +53,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
+      # Sets up MATLAB on the GitHub Actions runner
+      - name: Setup MATLAB
+        uses: matlab-actions/setup-matlab@v0
+
       - name: Package
         uses: matlab-actions/run-command@v0
         with:
