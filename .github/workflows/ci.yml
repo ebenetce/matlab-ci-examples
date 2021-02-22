@@ -61,7 +61,7 @@ jobs:
       - name: Package
         uses: matlab-actions/run-command@v0
         with:
-           command: matlab.addons.toolbox.packageToolbox('./release/main.prj')
+           command: "matlab.addons.toolbox.packageToolbox('./release/main.prj')"
 
      - name: Create Release
         id: create_release
